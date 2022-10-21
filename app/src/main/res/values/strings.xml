@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CUCanteen</string>
+    <string name="titile">ดื่มด่ำกับทุกรสชาติเพียงปลายนิ้วสัมผัส</string>
+    <string name="CUCanteen">CUCanteen</string>
+    <string name="arrow">arrow</string>
+    <string name="button">เริ่มต้น</string>
 </resources>
