@@ -14,11 +14,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void LetStart(View v){
-        Intent i = new Intent(this,nextpage2.class);
-        startActivity(i);
 
-
-
-    }
 }
