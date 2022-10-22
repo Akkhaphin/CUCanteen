@@ -3,8 +3,16 @@
     <string name="titile">See you happy CUCanteen</string>
     <string name="CUCanteen">CUCanteen</string>
     <string name="arrow">arrow</string>
-    <string name="button">เริ่มต้น</string>
+    <string name="buttonStart">เริ่มต้น</string>
     <string name="OR">หรือ</string>
     <string name="signin"><u>ลงชื่อเข้าใช้</u></string>
     <string name="help"><u>ต้องการความช่วยเหลือ?</u></string>
+    <string name="choose">ต้องการเข้าใช้งานในฐานะ</string>
+    <string name="sellerpic">sellerpic</string>
+    <string name="customerpic">customerpic</string>
+    <string name="Restaurant">ร้านค้า</string>
+    <string name="Customer">ลูกค้า</string>
+    <string name="buttonOperation">ดำเนินการต่อ</string>
+    <string name="tittle1"><u>เมื่อกด “ดำเนินการต่อ” หมายถึง คุณได้ยอมรับข้อกำหนด นโยบายความเป็นส่วนตัว</u></string>
+    <string name="tittle2"><u>และนโยบายคุกกี้ทั้งหมดของเรา</u></string>
 </resources>
