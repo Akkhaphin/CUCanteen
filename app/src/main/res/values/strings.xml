@@ -19,7 +19,21 @@
 
     <string name="DailyMenu">เมนูประจำวัน</string>
     <string name="search_bg">search_bg</string>
+    <string name="SearchMenu">ค้นหาเมนู</string>
+    <string name="food">food</string>
+    <string name="clean">clean</string>
+    <string name="halal">halal</string>
+    <string name="bakery">bakery</string>
+    <string name="อาหาร">อาหาร</string>
+    <string name="เครื่องดื่ม">เครื่องดื่ม</string>
+    <string name="คลีน">คลีน</string>
+    <string name="ฮาลาล">ฮาลาล</string>
+    <string name="อื่นๆ">อื่นๆ</string>
 
     <string name="Menu">เมนูอาหาร</string>
+    <string name="plus">plus</string>
+    <string name="AddMenu">กดเพื่อเพิ่มเมนู</string>
+
+    <string name="picture">picture</string>
 
 </resources>
