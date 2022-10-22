@@ -4,5 +4,7 @@
     <string name="CUCanteen">CUCanteen</string>
     <string name="arrow">arrow</string>
     <string name="button">เริ่มต้น</string>
-
+    <string name="OR">หรือ</string>
+    <string name="signin"><u>ลงชื่อเข้าใช้</u></string>
+    <string name="help"><u>ต้องการความช่วยเหลือ?</u></string>
 </resources>
