@@ -15,4 +15,11 @@
     <string name="buttonOperation">ดำเนินการต่อ</string>
     <string name="tittle1"><u>เมื่อกด “ดำเนินการต่อ” หมายถึง คุณได้ยอมรับข้อกำหนด นโยบายความเป็นส่วนตัว</u></string>
     <string name="tittle2"><u>และนโยบายคุกกี้ทั้งหมดของเรา</u></string>
+
+
+    <string name="DailyMenu">เมนูประจำวัน</string>
+    <string name="search_bg">search_bg</string>
+
+    <string name="Menu">เมนูอาหาร</string>
+
 </resources>
