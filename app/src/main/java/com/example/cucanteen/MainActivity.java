@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Letstart(View v) {
-        Intent i = new Intent(this,HomeUser.class);
+        Intent i = new Intent(this,SignInAS.class);
         startActivity(i);
     }
     public void GoRegister(View v)

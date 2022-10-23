@@ -3,8 +3,10 @@ package com.example.cucanteen;
 
 
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.util.Log;
 import android.os.Bundle;
 import android.view.View;
@@ -16,15 +18,17 @@ import org.w3c.dom.Text;
 public class Addmenu extends AppCompatActivity {
     //private final int GALLERY_REQ_CODE=1000;
     private static final String TAG = "Addmenu";
-   // EditText NameInput;
+    EditText NameInput;
     EditText PriceInput;
-    TextView textView;
-    TextView testtext24;
+    TextView textView23;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addmenu);
+        NameInput = (EditText) findViewById(R.id.editTextTextPersonName2);
+        PriceInput = (EditText) findViewById(R.id.editTextNumberSigned);
+        textView23 = (TextView) findViewById(R.id.textView23);
         //textView = (TextView) findViewById(R.id.textView);
         //ImageView imgGallery = findViewById(R.id.imGallery);
         //Button button3 = findViewById(R.id.button3);
@@ -40,11 +44,13 @@ public class Addmenu extends AppCompatActivity {
 
     }
 
-    //public void SEND(View view) {
-      //  NameInput = (EditText) findViewById(R.id.editTextTextPersonName2);
-       // PriceInput = (EditText) findViewById(R.id.editTextNumberSigned);
-        //if ("A"==NameInput.getText() ) {
-
+    public void SEND(View view) {
+            //textView23.setText(NameInput.getText().toString()+PriceInput.getText().toString());
+        Intent senderIntent = new Intent(this,Menu_Restaurant.class);
+                senderIntent.putExtra("NameInput",NameInput.getText().toString());
+                senderIntent.putExtra("PriceInput",PriceInput.getText().toString());
+        startActivity(senderIntent);
+    }
 }
 
 
