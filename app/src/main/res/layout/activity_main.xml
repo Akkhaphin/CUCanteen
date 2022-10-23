@@ -60,6 +60,7 @@
         android:layout_marginTop="46dp"
         android:layout_marginEnd="121dp"
         android:backgroundTint="#FFDEE5"
+        android:onClick="Letstart"
         android:text="@string/buttonStart"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -91,6 +92,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="127dp"
         android:text="@string/signin"
+        android:onClick="GoRegister"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -111,5 +113,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:ignore="TextContrastCheck" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
