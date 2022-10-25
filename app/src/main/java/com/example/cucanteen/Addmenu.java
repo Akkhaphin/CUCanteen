@@ -1,5 +1,7 @@
 package com.example.cucanteen;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,7 +14,7 @@ public class Addmenu extends AppCompatActivity {
     // creating variables for our edittext, button and dbhandler
     private EditText courseNameEdt, courseTracksEdt, courseDurationEdt, courseDescriptionEdt;
     private Button addCourseBtn;
-    private DBHandler dbHandler;
+    private DBHelper dbHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,7 @@ public class Addmenu extends AppCompatActivity {
 
         // creating a new dbhandler class
         // and passing our context to it.
-        dbHandler = new DBHandler(Addmenu.this);
+        dbHandler = new DBHelper(Addmenu.this);
 
         // below line is to add on click listener for our add course button.
         addCourseBtn.setOnClickListener(new View.OnClickListener() {
@@ -59,5 +61,9 @@ public class Addmenu extends AppCompatActivity {
                 //courseDescriptionEdt.setText("");
             }
         });
+    }
+    public void GOBACK(View v) {
+        Intent i = new Intent(this,Menu_Restaurant.class);
+        startActivity(i);
     }
 }

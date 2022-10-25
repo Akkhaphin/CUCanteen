@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Letstart(View v) {
-        Intent i = new Intent(this,HomeUser.class);
+        Intent i = new Intent(this,Menu_Restaurant.class);
         startActivity(i);
     }
     public void GoRegister(View v)
