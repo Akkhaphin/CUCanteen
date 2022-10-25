@@ -33,8 +33,9 @@
                     app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:layout_width="372dp"
-                    android:layout_height="67dp"
+                    android:id="@+id/location_Recycler"
+                    android:layout_width="357dp"
+                    android:layout_height="132dp"
                     android:layout_marginStart="13dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="13dp"
@@ -199,7 +200,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="13dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginEnd="248dp"
                     android:text="@string/เลือกจากโรงอาหารรอบจุฬาฯ"
                     android:textColor="#DA5F8E"
