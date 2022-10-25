@@ -16,7 +16,7 @@
             android:id="@+id/foodImage"
             android:layout_width="340dp"
             android:layout_height="190dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="-5dp"
             android:layout_weight="1"
             android:paddingLeft="0dp"
             android:paddingTop="0dp"
