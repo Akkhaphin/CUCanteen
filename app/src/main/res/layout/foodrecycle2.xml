@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name: "
+            android:text="ชื่ออาหาร: "
             android:textSize="24dp"
             android:textColor="@color/black"
             style="bold"/>
@@ -40,7 +40,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Price: "
+                android:text="ราคา: "
                 android:textSize="24dp"
                 android:textColor="@color/black"
                 style="bold"/>

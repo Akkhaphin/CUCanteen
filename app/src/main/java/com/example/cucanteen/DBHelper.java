@@ -5,6 +5,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.jar.Attributes;
+
 public class DBHelper extends SQLiteOpenHelper {
     public DBHelper(Context context) {
         super(context, "Userdata.db", null, 1);
@@ -12,7 +14,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase DB) {
-        DB.execSQL("create Table Userdetails(Name TEXT primary key, Price TEXT)");
+        DB.execSQL("create Table Userdetails(name TEXT primary key, price TEXT)");
     }
 
 
@@ -21,12 +23,12 @@ public class DBHelper extends SQLiteOpenHelper {
         DB.execSQL("drop Table if exists Userdetails");
     }
 
-    public Boolean addNewCourse(String Name, int Price)
+    public Boolean addNewCourse(String Name, int Price )
     {
         SQLiteDatabase DB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put("Name", Name);
-        contentValues.put("Price", Price);
+        contentValues.put("name", Name);
+        contentValues.put("price", Price);
         long result = DB.insert("Userdetails", null, contentValues);
         if(result==-1)
         {

@@ -95,8 +95,10 @@
         app:backgroundTint="#F9C8D2"
         app:layout_constraintBottom_toBottomOf="@+id/textView22"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.938"
         app:srcCompat="@drawable/plus_fav_pink" />
 
 

@@ -21,7 +21,7 @@ import java.util.ArrayList;
 public class Menu_Restaurant extends AppCompatActivity {
     TextView textView22;
     RecyclerView recyclerView;
-    ArrayList<String> Name,Price;
+    ArrayList<String> ชื่ออาหาร,ราคา;
     DBHelper db;
     MenuAdapter adapter;
     @Override
@@ -35,9 +35,9 @@ public class Menu_Restaurant extends AppCompatActivity {
         textView22.setText(recievedValue2);
         recyclerView = findViewById(R.id.recyclerview);
         db = new DBHelper(this);
-        Name = new ArrayList<>();
-        Price = new ArrayList<>();
-        adapter = new MenuAdapter(this,Name,Price);
+        ชื่ออาหาร = new ArrayList<>();
+        ราคา = new ArrayList<>();
+        adapter = new MenuAdapter(this,ชื่ออาหาร,ราคา);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         displaydata();
@@ -53,8 +53,8 @@ public class Menu_Restaurant extends AppCompatActivity {
         {
             while(cursor.moveToNext())
             {
-                Name.add(cursor.getString(0));
-                Price.add(cursor.getString(1));
+                ชื่ออาหาร.add(cursor.getString(1));
+                ราคา.add(cursor.getString(0));
             }
         }
     }

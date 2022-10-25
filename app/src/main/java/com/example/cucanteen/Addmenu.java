@@ -48,10 +48,15 @@ public class Addmenu extends AppCompatActivity {
                     Toast.makeText(Addmenu.this, "Please enter all the data..", Toast.LENGTH_SHORT).show();
                     return;
                 }
+                else
+                {
 
+                    startActivity(new Intent(Addmenu.this, Menu_Restaurant.class));
+                }
+                dbHandler.addNewCourse(courseName, courseDuration);
                 // on below line we are calling a method to add new
                 // course to sqlite data and pass all our values to it.
-                dbHandler.addNewCourse(courseName, courseDuration);
+
 
                 // after adding the data we are displaying a toast message.
                 Toast.makeText(Addmenu.this, "Course has been added.", Toast.LENGTH_SHORT).show();
@@ -62,8 +67,8 @@ public class Addmenu extends AppCompatActivity {
             }
         });
     }
-    public void GOBACK(View v) {
-        Intent i = new Intent(this,Menu_Restaurant.class);
-        startActivity(i);
-    }
+   //public void GOBACK(View v) {
+    //    Intent i = new Intent(this,Menu_Restaurant.class);
+     //   startActivity(i);
+    //}
 }
