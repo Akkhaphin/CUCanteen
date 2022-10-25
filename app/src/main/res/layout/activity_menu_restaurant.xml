@@ -37,19 +37,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="38dp"
-                    android:text="@string/AddMenu"
-                    android:textColor="#AF0475"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toEndOf="@+id/imageButton"
-                    app:layout_constraintTop_toBottomOf="@+id/textView11"
-                    tools:ignore="TextContrastCheck" />
-
                 <ImageView
                     android:id="@+id/imageView6"
                     android:layout_width="wrap_content"
@@ -62,22 +49,6 @@
                     app:srcCompat="@drawable/ellipse"
                     tools:ignore="ImageContrastCheck" />
 
-                <ImageButton
-                    android:id="@+id/imageButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="25dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:clickable="true"
-                    android:contentDescription="@string/plus"
-                    android:minWidth="48dp"
-                    android:minHeight="48dp"
-                    android:onClick="Goaddmenu"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView11"
-                    app:srcCompat="@drawable/plus"
-                    tools:ignore="ImageContrastCheck" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -114,6 +85,19 @@
         android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="Goaddmenu"
+        app:backgroundTint="#F9C8D2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:srcCompat="@drawable/plus_fav_pink" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
