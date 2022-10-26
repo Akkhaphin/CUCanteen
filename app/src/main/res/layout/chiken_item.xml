@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Price"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgchickenBG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/list_icanteen_bg" />
+
+    <ImageView
+        android:id="@+id/imgchicken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/imgchickenBG"
+        app:layout_constraintTop_toTopOf="@+id/imgchickenBG"
+        app:srcCompat="@drawable/res1" />
+
+    <TextView
+        android:id="@+id/nameFoodChicken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        android:text="ข้าวเหนียวคอหมูย่าง"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imgchicken"
+        app:layout_constraintTop_toTopOf="@+id/imgchickenBG" />
+
+    <TextView
+        android:id="@+id/caption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:text="ข้าวเหนียวคอหมูย่าง"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/imgchicken"
+        app:layout_constraintTop_toBottomOf="@+id/nameFoodChicken" />
+
+    <TextView
+        android:id="@+id/caption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="ของอร่อยที่ใครได้ทานก็ติดใจ"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/caption1"
+        app:layout_constraintTop_toBottomOf="@+id/caption1" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="40 บาท"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/caption2"
+        app:layout_constraintTop_toBottomOf="@+id/caption2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

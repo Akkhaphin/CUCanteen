@@ -9,9 +9,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.example.cucanteen.Adaptor.IcanteenAdaptor;
-import com.example.cucanteen.Adaptor.SliderAdaptor;
 import com.example.cucanteen.Domain.IcanteenDomain;
-import com.example.cucanteen.Domain.SliderDomain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +37,7 @@ public class icanteen extends AppCompatActivity {
 
     private void seticanteenRecycler(List<IcanteenDomain> icanteenDomainList){
 
-        icanteenRecycler = findViewById(R.id.icanteenRecycler);
+        icanteenRecycler = findViewById(R.id.chickenRecycler);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL,false);
         icanteenRecycler.setLayoutManager(layoutManager);
         icanteenAdaptor = new IcanteenAdaptor(this, icanteenDomainList);
