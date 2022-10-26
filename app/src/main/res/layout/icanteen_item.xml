@@ -2,15 +2,16 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/imgBg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/list_icanteen_bg" />
@@ -27,7 +28,7 @@
         android:id="@+id/nameRes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="11dp"
         android:text="ร้านส้ม อาหารชุด"
         android:textColor="#000000"
@@ -39,18 +40,19 @@
         android:id="@+id/menu2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="6dp"
         android:text="ข้าวแกงกะหรี่"
         android:textColor="#000000"
         android:textSize="13sp"
-        app:layout_constraintTop_toBottomOf="@+id/nameRes"
-        tools:layout_editor_absoluteX="219dp" />
+        app:layout_constraintStart_toEndOf="@+id/menu1"
+        app:layout_constraintTop_toBottomOf="@+id/nameRes" />
 
     <TextView
         android:id="@+id/menu1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="6dp"
         android:text="ข้าวไข่ข้น"
         android:textColor="#000000"
@@ -62,7 +64,7 @@
         android:id="@+id/menu3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="7dp"
         android:text="ข้าวคัตสึด้ง"
         android:textColor="#000000"

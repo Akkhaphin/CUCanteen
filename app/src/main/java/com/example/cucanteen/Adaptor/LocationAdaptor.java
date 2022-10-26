@@ -55,11 +55,12 @@ public class LocationAdaptor extends RecyclerView.Adapter<LocationAdaptor.Locati
     }
 
     public static final class LocationViewHolder extends RecyclerView.ViewHolder{
-        ImageView locationImg;
+        ImageView locationImg,locationBg;
 
         public LocationViewHolder(@NonNull View itemView) {
             super(itemView);
             locationImg = itemView.findViewById(R.id.locationImg);
+            locationBg = itemView.findViewById(R.id.locationBg);
         }
     }
 }

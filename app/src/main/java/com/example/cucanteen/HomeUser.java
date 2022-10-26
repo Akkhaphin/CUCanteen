@@ -55,9 +55,9 @@ public class HomeUser extends AppCompatActivity {
         setFavRecycler(favDomainList);
 
         List<LocationDomain> locationDomainList = new ArrayList<>();
-        locationDomainList.add(new LocationDomain(R.drawable.eng));
-        locationDomainList.add(new LocationDomain(R.drawable.sci));
-        locationDomainList.add(new LocationDomain(R.drawable.art));
+        locationDomainList.add(new LocationDomain(R.drawable.eng,R.drawable.location_rec));
+        locationDomainList.add(new LocationDomain(R.drawable.sci,R.drawable.location_rec));
+        locationDomainList.add(new LocationDomain(R.drawable.art,R.drawable.location_rec));
         setLocationRecycler(locationDomainList);
 
 

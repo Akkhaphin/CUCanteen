@@ -37,10 +37,10 @@ public class IcanteenAdaptor extends RecyclerView.Adapter<IcanteenAdaptor.Icante
     public void onBindViewHolder(@NonNull IcanteenViewHolder holder, int position) {
 
         holder.nameRes.setText(icanteenDomainList.get(position).getName());
-        holder.menu1.setText(icanteenDomainList.get(position).getName());
-        holder.menu2.setText(icanteenDomainList.get(position).getName());
-        holder.menu3.setText(icanteenDomainList.get(position).getName());
-        holder.menu4.setText(icanteenDomainList.get(position).getName());
+        holder.menu1.setText(icanteenDomainList.get(position).getMenu1());
+        holder.menu2.setText(icanteenDomainList.get(position).getMenu2());
+        holder.menu3.setText(icanteenDomainList.get(position).getMenu3());
+        holder.menu4.setText(icanteenDomainList.get(position).getMenu4());
         holder.icanteenImg.setImageResource(icanteenDomainList.get(position).getImg());
         holder.imgBg.setImageResource(icanteenDomainList.get(position).getImgBg());
 
