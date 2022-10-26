@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:onClick="GOBACK"
-        android:text="Add Course"
+        android:text="เพิ่มรายการอาหาร"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
