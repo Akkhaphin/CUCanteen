@@ -6,13 +6,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
 
 import com.example.cucanteen.Adaptor.FavAdaptor;
-import com.example.cucanteen.Adaptor.IcanteenAdaptor;
 import com.example.cucanteen.Adaptor.LocationAdaptor;
 import com.example.cucanteen.Adaptor.SliderAdaptor;
 import com.example.cucanteen.Domain.FavDomain;
@@ -28,7 +26,6 @@ public class HomeUser extends AppCompatActivity {
     SliderAdaptor sliderAdaptor;
     FavAdaptor favAdaptor;
     LocationAdaptor locationAdaptor;
-    private LocationAdaptor.RecycleViewClicklistener listener;
 
 
 
@@ -85,23 +82,16 @@ public class HomeUser extends AppCompatActivity {
     }
 
     private void setLocationRecycler(List<LocationDomain> locationDomainList){
-        setOnclickListener();
         locationRecycler = findViewById(R.id.location_Recycler);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.HORIZONTAL,false);
         locationRecycler.setLayoutManager(layoutManager);
-        locationAdaptor = new LocationAdaptor(this, locationDomainList);
+        locationAdaptor = new LocationAdaptor(this, locationDomainList, new LocationAdaptor.ItemClickListener() {
+            @Override
+            public void onItemClick(LocationDomain locationDomain) {
+                startActivity(new Intent(HomeUser.this, icanteen.class));
+            }
+        });
         locationRecycler.setAdapter(locationAdaptor);
     }
-
-    private void setOnclickListener() {
-        listener = new LocationAdaptor.RecycleViewClicklistener() {
-            @Override
-            public void onClick(View v, int position) {
-                Intent intent = new Intent(getApplicationContext(), icanteen.class);
-                startActivity(intent);
-            }
-        };
-    }
 }
-
 
