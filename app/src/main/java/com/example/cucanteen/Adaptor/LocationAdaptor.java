@@ -5,26 +5,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cucanteen.Domain.LocationDomain;
-import com.example.cucanteen.Domain.SliderDomain;
 import com.example.cucanteen.R;
 
 import java.util.List;
 
 public class LocationAdaptor extends RecyclerView.Adapter<LocationAdaptor.LocationViewHolder>{
-
+    private RecycleViewClicklistener listener;
     Context context;
     List<LocationDomain> locationDomainList;
 
     public LocationAdaptor(Context context, List<LocationDomain> locationDomainList) {
         this.context = context;
         this.locationDomainList = locationDomainList;
+        this.listener=listener;
     }
+
+
+
 
     @NonNull
     @Override
@@ -44,14 +46,22 @@ public class LocationAdaptor extends RecyclerView.Adapter<LocationAdaptor.Locati
     public int getItemCount() {
         return locationDomainList.size();
     }
+    public interface RecycleViewClicklistener{
+        void onClick(View v,int position);
+    }
 
-
-    public static final class LocationViewHolder extends RecyclerView.ViewHolder{
+    public class LocationViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         ImageView locationImg;
 
         public LocationViewHolder(@NonNull View itemView) {
             super(itemView);
             locationImg = itemView.findViewById(R.id.locationImg);
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            listener.onClick(view,getAdapterPosition());
         }
     }
 }

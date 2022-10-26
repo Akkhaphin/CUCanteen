@@ -69,9 +69,11 @@ public class IcanteenAdaptor extends RecyclerView.Adapter<IcanteenAdaptor.Icante
             menu3 = itemView.findViewById(R.id.menu3);
             menu4 = itemView.findViewById(R.id.menu4);
 
+            }
 
         }
     }
 
 
-}
+
+
