@@ -1,6 +1,8 @@
 package com.example.cucanteen;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -44,5 +46,9 @@ public class cartdata extends AppCompatActivity {
             sum=sum+(products.get(i).getPrice()*products.get(i).getQnt());
 
         rateview.setText("Total Amount : INR "+sum);
+    }
+    public void Letstart(View v) {
+        Intent i = new Intent(this,HomeUser.class);
+        startActivity(i);
     }
 }

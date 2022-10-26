@@ -15,7 +15,7 @@ public class HomeUser extends AppCompatActivity {
     }
     public void openstore(View v)
     {
-        Intent i = new Intent(this, order2.class);
+        Intent i = new Intent(this, Order2.class);
         startActivity(i);
     }
 }

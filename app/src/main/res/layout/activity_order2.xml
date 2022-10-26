@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".Order2">
 
+    <TextView
+        android:id="@+id/lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="204dp"
+        android:layout_marginBottom="28dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/b2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="395dp"
@@ -47,22 +57,22 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
         android:layout_marginBottom="76dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton10"
+        app:layout_constraintBottom_toTopOf="@+id/b2"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/minus_order" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/b1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="120dp"
         android:layout_marginBottom="76dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton10"
+        app:layout_constraintBottom_toTopOf="@+id/b2"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/plus_order" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/b2"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:backgroundTint="#00FFFFFF"
@@ -70,6 +80,67 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/search_bg" />
+
+    <EditText
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="80dp"
+        android:ems="10"
+        android:hint="Product ID"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/t2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/t4"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:hint="n"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/b2"
+        app:layout_constraintEnd_toStartOf="@+id/b1"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toEndOf="@+id/imageButton8" />
+
+    <EditText
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="72dp"
+        android:ems="10"
+        android:hint="Product Name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/t3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="96dp"
+        android:ems="10"
+        android:hint="Product Price"
+        app:layout_constraintBottom_toTopOf="@+id/t4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/t3"
+        tools:layout_editor_absoluteX="201dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

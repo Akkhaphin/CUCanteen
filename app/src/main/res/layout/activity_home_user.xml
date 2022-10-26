@@ -114,6 +114,7 @@
                     android:layout_marginStart="13dp"
                     android:backgroundTint="#00F6EFEF"
                     android:contentDescription="@string/food"
+                    android:onClick="openstore"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/slider_recycler"
                     app:srcCompat="@drawable/food" />
